@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visolution - Películas fabricadas para a saúde ocular</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #0066cc;
+      --azul-escuro: #003366;
+      --cinza-claro: #f2f4f8;
+      --cinza-medio: #e2e6ea;
+      --preto: #111;
+      --branco: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--cinza-claro);
+      color: var(--preto);
+    }
+
+    header {
+      background: var(--azul-escuro);
+      color: var(--branco);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-family: 'Lexend', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: #ddd;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--branco);
+    }
+
+    .banner {
+      background: linear-gradient(to right, var(--azul-escuro), var(--azul));
+      color: var(--branco);
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .banner h2 {
+      font-size: 2.7rem;
+      margin-bottom: 1rem;
+    }
+
+    .banner button {
+      background-color: var(--branco);
+      color: var(--azul-escuro);
+      padding: 0.9rem 2rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .banner button:hover {
+      background-color: var(--cinza-medio);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    section h2 {
+      font-family: 'Lexend', sans-serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: var(--azul-escuro);
+      text-align: center;
+    }
+
+    .benefits, .solucoes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .card {
+      background: var(--branco);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      flex: 1 1 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: var(--azul);
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    form {
+      background: var(--branco);
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: var(--azul);
+      color: var(--branco);
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: var(--azul-escuro);
+    }
+
+    footer {
+      background: var(--preto);
+      color: var(--branco);
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .banner h2 {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>VISOLUTION</h1>
+    <p>Tecnologia inovadora que melhora a saúde ocular</p>
+    <nav>
+		<a href="#historia">História</a>
+		<a href="#produtos">Produtos</a>
+		<a href="#beneficios">Benefícios</a>
+		<a href="#solucoes">Soluções</a>
+		<a href="#contato">Contato</a>
+	  </nav>
+  </header>
+
+  <div class="banner">
+    <h2>Películas inteligentes pensadas para a saúde ocular</h2>
+    <button>Fale conosco</button>
+  </div>
+
+  <section id="beneficios">
+    <h2>Benefícios das nossas películas</h2>
+    <div class="benefits">
+      <div class="card">
+        <h3>Prevenção</h3>
+        <p>Previne problemas oculares causados pela alta exposição à luz azul.</p>
+      </div>
+      <div class="card">
+        <h3>Melhores noites de sono</h3>
+        <p>Te permite usar seu celular logo antes de dormir sem atrapalhar o descanso.</p>
+      </div>
+      <div class="card">
+        <h3>Compatibilidade Total</h3>
+        <p>Funciona com qualquer modelo e integra com leitores de tela.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ...código anterior mantido... -->
+
+  <section id="produtos">
+    <h2>Conheça nossos produtos</h2>
+    <div class="benefits">
+      <div class="card">
+        <h3>Película que reduz a lúz Azul</h3>
+        <p>Possui um filtro na película que ajusta a luminosidade que bloqueia a luz Aazul.</p>
+      </div>
+      <div class="card">
+        <h3>Película para astigmatismo</h3>
+        <p>Funciona para todos os gráus de astigmatismo, diminuindo o cansaço visual.</p>
+      </div>
+      <div class="card">
+        <h3>Película para miopia</h3>
+        <p>Também funciona para todos os gráus de miopia, diminuindo o cansaço visual.</p>
+      </div>
+      <div class="card">
+        <h3>Película Personalizada</h3>
+        <p>Desenvolvemos soluções sob medida para instituições, empresas e projetos especiais de acessibilidade.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- História da Empresa -->
+<section id="historia">
+	<h2>Nossa História</h2>
+	<div class="card">
+	  <p>
+		A <strong>Visualization</strong> nasceu com a missão de tornar o mundo digital mais acessível para todos. 
+		Iniciamos nossa jornada em 2022, unindo tecnologia e empatia para criar películas que possibilitam 
+		a navegação independente por dispositivos móveis para pessoas com deficiência visual.
+	  </p>
+	  <p>
+		Ao longo dos anos, investimos em pesquisa, testes com usuários reais e parcerias com instituições especializadas.
+		Hoje, somos referência nacional em soluções táteis para inclusão digital.
+	  </p>
+	</div>
+  </section>
+  
+  <!-- Produtos -->
+  <section id="produtos">
+	<h2>Nossos Produtos</h2>
+	<div class="benefits">
+	  <div class="card">
+		<h3>Película Tátil</h3>
+		<p>Possui marcações em relevo que ajudam o usuário a se orientar pela tela com mais precisão.</p>
+	  </div>
+	  <div class="card">
+		<h3>Película com Feedback Vibratório</h3>
+		<p>Integra microvibrações que respondem ao toque para facilitar a interação sem dependência visual.</p>
+	  </div>
+	  <div class="card">
+		<h3>Película com Contraste Aprimorado</h3>
+		<p>Ideal para pessoas com baixa visão, melhora o contraste e reduz reflexos.</p>
+	  </div>
+	  <div class="card">
+		<h3>Película Educacional</h3>
+		<p>Projetada para o uso em escolas e ambientes de ensino acessível com marcações específicas.</p>
+	  </div>
+	</div>
+  </section>
+  
+
+
+  <section id="solucoes">
+    <h2>Soluções para diferentes necessidades</h2>
+    <div class="solucoes">
+      <div class="card">
+        <h3>Instituições Educacionais</h3>
+        <p>Facilitando o aprendizado acessível em escolas e universidades.</p>
+      </div>
+      <div class="card">
+        <h3>Empresas Inclusivas</h3>
+        <p>Transforme seu ambiente de trabalho com acessibilidade real.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Fale com a gente</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea rows="5" placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Visolution - Todos os direitos reservados | Inclusão que se toca</p>
+  </footer>
+
+</body>
+</html>
